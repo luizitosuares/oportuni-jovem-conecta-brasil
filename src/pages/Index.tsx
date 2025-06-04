@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -237,14 +236,16 @@ const Index = () => {
         </div>
 
         <div className="text-center">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-indigo-200 text-indigo-600 hover:bg-indigo-50"
-          >
-            Ver Todas as Oportunidades
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link to="/oportunidades">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-indigo-200 text-indigo-600 hover:bg-indigo-50"
+            >
+              Ver Todas as Oportunidades
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 
